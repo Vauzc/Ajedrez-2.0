@@ -15,7 +15,7 @@ boolean Turno = true;
 int fila =8;
 int columna=8;
 int t=7;
-int n=1;
+int n=0;
 int j, k;
 int[][] Mx;
 int[][] My;
@@ -68,6 +68,7 @@ void draw(){
      for (int i =0; i<k;i++){
         PiezasN[i].draw();
      }
+     
      /*for (int i=0;i<PiezasB.length;i++){
           switch(i){
               case 0:
@@ -184,3 +185,7 @@ void draw(){
      PiezasB[0].setTranslation(x,y); 
   }   
 }*/
+void keyPressed(){
+  n++;
+  problemas(n);
+}
