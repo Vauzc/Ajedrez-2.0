@@ -1,6 +1,6 @@
 class Alfil extends Piezas {
 protected PVector trans;
-protected boolean dye;
+protected boolean dye,Turno;
 protected PImage Color;
 protected float PosX,PosY;
 protected String identity;
@@ -27,6 +27,12 @@ public Alfil(int x, int y, boolean Dye, String Identity ) {
       
       PosX=x;
       PosY=y;
+      
+ if(dye==true){
+      Turno = true;
+    }else{
+      Turno = false;
+      }
       
   }
   

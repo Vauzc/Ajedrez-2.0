@@ -11,6 +11,7 @@ PImage tb;
 PImage tn;
 PImage pb;
 PImage pn;
+boolean Turno = true;
 int fila =8;
 int columna=8;
 int t=7;
@@ -131,12 +132,16 @@ void draw(){
 
  
  void mousePressed() {    
+   
+  if(Turno==true){
    for (int i =0; i<j;i++){ //recorre el arreglo para que en clickb se mire si esta encima y ha presionado
           PiezasB[i].clickb(mouseX, mouseY);
        }
+   } else {
    for (int i =0; i<k;i++){
           PiezasN[i].clickn(mouseX, mouseY);
        }
+   }
 }
 
 /*void mouseClicked(){
