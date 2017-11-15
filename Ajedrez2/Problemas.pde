@@ -23,34 +23,108 @@ void problemas(int n){
       break;
       
       case 2:
-          
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
           
       break;
       case 3:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           
       break;
       case 4:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           
+           
       break;
       case 5:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           
       break;
       case 6:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           
+           
       break;
       case 7:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           
+           
       break;
       case 8:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           
+           
       break;
       case 9:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           
+           
       break;
       case 10:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           
       break;
       case 11:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+            PiezasN[8] = new Peon(Mx[6][0],My[6][0],false,"PN1");
+           PiezasN[9] = new Peon(Mx[6][1],My[6][1],false,"PN2");
+           PiezasN[10] = new Peon(Mx[6][2],My[6][2],false,"PN3");
+           PiezasN[11] = new Peon(Mx[6][3],My[6][3],false,"PN4");
+           PiezasN[12] = new Peon(Mx[6][4],My[6][4],false,"PN5");
+           PiezasB[2] = new Alfil(Mx[0][2],My[0][2],true,"AB1");
+           PiezasN[4] = new Caballo(Mx[7][1],My[7][1],false,"CN1");
+           PiezasN[5] = new Caballo(Mx[7][6],My[7][6],false,"CN2");
+           PiezasN[2] = new Alfil(Mx[7][2],My[7][2],false,"AN1");
+           PiezasN[6] = new Torre(Mx[7][0],My[7][0],false,"TN1");
+           PiezasB[1] = new Reina(Mx[0][3],My[0][3],true,"QB");
+           PiezasN[8] = new Peon(Mx[6][0],My[6][0],false,"PN1");
+           
+           
       break;
       case 12:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           PiezasN[8] = new Peon(Mx[6][0],My[6][0],false,"PN1");
+           PiezasN[9] = new Peon(Mx[6][1],My[6][1],false,"PN2");          
+           PiezasB[4] = new Caballo(Mx[0][1],My[0][1],true,"CB1");
+           PiezasB[2] = new Alfil(Mx[0][2],My[0][2],true,"AB1");
+           PiezasB[1] = new Reina(Mx[0][3],My[0][3],true,"QB");
+           
+           
+           
       break;
       case 13:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           PiezasB[6] = new Torre(Mx[0][0],My[0][0],true,"TB1");
+           PiezasB[1] = new Reina(Mx[0][3],My[0][3],true,"QB");
+           PiezasN[8] = new Peon(Mx[6][0],My[6][0],false,"PN1");
+           PiezasN[4] = new Caballo(Mx[7][1],My[7][1],false,"CN1");
       break;
       case 14:
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasN[4] = new Caballo(Mx[7][1],My[7][1],false,"CN1");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           PiezasB[6] = new Torre(Mx[0][0],My[0][0],true,"TB1");
+           PiezasB[4] = new Caballo(Mx[0][1],My[0][1],true,"CB1");
+           PiezasB[4] = new Caballo(Mx[0][1],My[0][1],true,"CB1");
       break;
       case 15:
+           PiezasN[2] = new Alfil(Mx[7][2],My[7][2],false,"AN1");
+           PiezasB[6] = new Torre(Mx[0][0],My[0][0],true,"TB1");
+           PiezasB[7] = new Torre(Mx[0][7],My[0][7],true,"TB2");
+           PiezasN[0] = new Rey(Mx[7][4],My[7][4],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
+           PiezasB[4] = new Caballo(Mx[0][1],My[0][1],true,"CB1");
       break;
       default:
            PiezasB[0] = new Rey(Mx[0][4],My[0][4],true,"RB");
