@@ -1,6 +1,6 @@
 abstract class Piezas {
 protected PVector trans;
-protected boolean dye;
+protected boolean dye,Turno;
 protected String identity;
 protected boolean selectb = false;
 protected boolean selectn = false;

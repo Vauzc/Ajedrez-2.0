@@ -1,6 +1,6 @@
 class Peon extends Piezas {
 protected PVector trans;
-protected boolean dye;
+protected boolean dye,Turno;
 protected float PosX,PosY;
 protected String identity;
 
@@ -23,11 +23,15 @@ public Peon(int x, int y, boolean Dye, String Identity ) {
   
   @Override
   void move(int x, int y){
+    
+      PosX=x;
+      PosY=y;
+      
+   if(dye==true){
+      Turno = true;
+    }else{
+      Turno = false;
+      }
+    }
       
   }
-
-  
-
-  
-  
-}

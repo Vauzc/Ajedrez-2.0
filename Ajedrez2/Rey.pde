@@ -1,6 +1,6 @@
 class Rey extends Piezas {
 protected PVector trans;
-protected boolean dye;
+protected boolean dye,Turno;
 protected float PosX,PosY;
 protected String identity;
 
@@ -30,5 +30,10 @@ public Rey(int x, int y, boolean Dye, String Identity) {
       PosX=x;
       PosY=y;
       
-  }
-  }
+   if(dye==true){
+      Turno = true;
+    }else{
+      Turno = false;
+      }
+    }
+}
