@@ -1,6 +1,6 @@
 class Torre extends Piezas {
 protected PVector trans;
-protected boolean dye,Turno;
+protected boolean dye;
 protected float PosX,PosY;
 protected String identity;
 

@@ -1,6 +1,6 @@
 class Alfil extends Piezas {
 protected PVector trans;
-protected boolean dye,Turno;
+protected boolean dye;
 protected PImage Color;
 protected float PosX,PosY;
 protected String identity;
