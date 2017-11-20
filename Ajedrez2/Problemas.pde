@@ -14,6 +14,8 @@ void problemas(int n){
            PiezasN[3] = new Peon(Mx[3][7],My[3][7],false,"PN1");
            j=7;
            k=4;
+           
+           
       break;
       
       case 2:

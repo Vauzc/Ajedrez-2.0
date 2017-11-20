@@ -94,5 +94,6 @@ void mousePressed() {
 
 void keyPressed() {
   n++;
+  Turno=true;
   problemas(n);
 }
