@@ -23,7 +23,6 @@ abstract class Piezas {
     drawFigure(dye);
     popMatrix();
     popStyle();
-    //Transformation(identity);
   }
 
   abstract void drawFigure(boolean dye);   

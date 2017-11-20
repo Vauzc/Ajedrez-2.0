@@ -32,10 +32,10 @@ void problemas(int n){
       break;
       case 3:
            PiezasN[0] = new Rey(Mx[5][7],My[5][7],false,"RN");
-           PiezasB[0] = new Reina(Mx[7][2],My[7][2],true,"DB");
+           PiezasB[0] = new Rey(Mx[0][6],My[0][6],true,"RB");
            PiezasB[1] = new Torre(Mx[7][6],My[7][6],true,"TB1");
            PiezasB[2] = new Torre(Mx[3][6],My[3][6],true,"TB2");
-           PiezasB[3] = new Rey(Mx[0][6],My[0][6],true,"RB");
+           PiezasB[3] = new Reina(Mx[7][2],My[7][2],true,"DB");
            PiezasN[1] = new Torre(Mx[4][3],My[4][3],false,"TN1");
            PiezasN[2] = new Alfil(Mx[2][3],My[2][3],false,"AN1");
            j=4;
@@ -84,9 +84,9 @@ void problemas(int n){
            PiezasN[0] = new Rey(Mx[1][5],My[1][5],false,"RN");
            PiezasN[1] = new Peon(Mx[2][5],My[2][5],false,"PN1");
            PiezasN[2] = new Alfil(Mx[0][5],My[0][5],false,"AN1");
-           PiezasB[0] = new Reina(Mx[4][6],My[4][6],true,"QB");
+           PiezasB[2] = new Reina(Mx[4][6],My[4][6],true,"QB");
            PiezasB[1] = new Torre(Mx[3][4],My[3][4],true,"TN1");
-           PiezasB[2] = new Rey(Mx[2][2],My[2][2],true,"RB");
+           PiezasB[0] = new Rey(Mx[2][2],My[2][2],true,"RB");
            j=3;
            k=3;
       break;
@@ -98,7 +98,7 @@ void problemas(int n){
            PiezasB[1] = new Alfil(Mx[5][7],My[5][7],true,"AB1");
            PiezasB[2] = new Caballo(Mx[4][4],My[4][4],true,"CB2");
            PiezasB[3] = new Torre(Mx[4][6],My[4][6],true,"TB1");
-           PiezasB[4] = new Rey(Mx[2][7],My[2][7],true,"RB");
+           PiezasB[0] = new Rey(Mx[2][7],My[2][7],true,"RB");
            PiezasB[5] = new Reina(Mx[1][1],My[1][1],true,"QB");
            j=6;
            k=3;
@@ -111,12 +111,12 @@ void problemas(int n){
            PiezasN[4] = new Peon(Mx[1][0],My[1][0],false,"PN2");
            PiezasN[5] = new Peon(Mx[1][7],My[1][7],false,"PN3");
            PiezasN[6] = new Caballo(Mx[0][0],My[0][0],false,"CN1");
-           PiezasB[0] = new Torre(Mx[3][1],My[3][1],true,"TB1");
+           PiezasB[5] = new Torre(Mx[3][1],My[3][1],true,"TB1");
            PiezasB[1] = new Reina(Mx[3][4],My[3][4],true,"QB");
            PiezasB[2] = new Caballo(Mx[2][6],My[2][6],true,"CB1");
            PiezasB[3] = new Torre(Mx[1][1],My[1][1],true,"TB1");
            PiezasB[4] = new Alfil(Mx[1][4],My[1][4],true,"AB1");
-           PiezasB[5] = new Rey(Mx[0][7],My[0][7],true,"RB");
+           PiezasB[0] = new Rey(Mx[0][7],My[0][7],true,"RB");
            j=6;
            k=7;           
       break;
@@ -124,8 +124,8 @@ void problemas(int n){
            PiezasN[0] = new Rey(Mx[1][0],My[1][0],false,"RN");
            PiezasN[1] = new Alfil(Mx[4][0],My[4][0],false,"AN1");
            PiezasN[2] = new Alfil(Mx[3][0],My[3][0],false,"AN2");
-           PiezasB[0] = new Torre(Mx[7][0],My[7][0],true,"TB1");
-           PiezasB[1] = new Rey(Mx[6][7],My[6][7],true,"RB");
+           PiezasB[1] = new Torre(Mx[7][0],My[7][0],true,"TB1");
+           PiezasB[0] = new Rey(Mx[6][7],My[6][7],true,"RB");
            PiezasB[2] = new Torre(Mx[4][5],My[4][5],true,"TB2");
            PiezasB[3] = new Peon(Mx[1][2],My[1][2],true,"PB1");
            PiezasB[4] = new Caballo(Mx[0][0],My[0][0],true,"CB1");
@@ -184,11 +184,11 @@ void problemas(int n){
            k=2;
       break;
       case 15:
-           PiezasN[0] = new Alfil(Mx[7][7],My[7][7],false,"AN1");
-           PiezasB[0] = new Torre(Mx[3][2],My[3][2],true,"TB1");
+           PiezasN[1] = new Alfil(Mx[7][7],My[7][7],false,"AN1");
+           PiezasB[2] = new Torre(Mx[3][2],My[3][2],true,"TB1");
            PiezasB[1] = new Torre(Mx[3][4],My[3][4],true,"TB2");
-           PiezasN[1] = new Rey(Mx[2][3],My[2][3],false,"RN");
-           PiezasB[2] = new Rey(Mx[0][3],My[0][3],true,"RB");
+           PiezasN[0] = new Rey(Mx[2][3],My[2][3],false,"RN");
+           PiezasB[0] = new Rey(Mx[0][3],My[0][3],true,"RB");
            PiezasB[3] = new Caballo(Mx[1][3],My[1][3],true,"CB1");
            j=4;
            k=2;
