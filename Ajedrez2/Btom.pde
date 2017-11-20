@@ -1,4 +1,4 @@
-/*class Btom {
+class Btom {
   PVector trans;
   PVector gn;
   color col;
@@ -32,4 +32,4 @@
   public PVector gn() {
     return gn;
   }
-}*/
+}

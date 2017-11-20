@@ -21,9 +21,25 @@ int[][] Mx;
 int[][] My;
 Piezas[] PiezasB;
 Piezas[] PiezasN;
+PImage ini;
+PImage [] gf=new PImage [86];
+boolean jc=false;
+Btom[] b = new Btom [3];
+int tc;
+int ttc;
+
 
 
 void setup() {
+  b[0] = new Btom (width-(width/3), height-(height/3)*2.5, width/4, height/10, color(0, 128, 255), "Jugar");
+  b[1] = new Btom (width-(width/3), height-(height/3)*2, width/4, height/10, color(0, 128, 255), "Modo Libre");
+  b[2] = new Btom (width-(width/3), height-(height/4), width/4, height/10, color(0, 128, 255), "Instrucciones");
+  ini = loadImage("a1.jpg");
+  for (int i=0; i<86; i++) {
+    String ii = str(i);
+    String s=".gif";
+    gf[i] = loadImage(ii+s);
+  }
   // Ubicación
   Mx=new int[columna][fila];
   My=new int[columna][fila];
@@ -60,19 +76,31 @@ void setup() {
 
 void draw() {
   background(0);
-  image(img, width/2-height/2, 0, height, height);
-  for (int i =0; i<j; i++) {
-    PiezasB[i].draw();
+  image(ini, 0, 0, width, height);
+  for (Btom i : b) 
+    i.pintar();
+  tc=millis()/1000;
+  if (tc < 86) {
+    ttc=tc;
   }
-  for (int i =0; i<k; i++) {
-    PiezasN[i].draw();
-  }
+  image(gf[ttc], width/15, height/8, width-width/2, height-height/5);
 
-  for (int i =0; i<j; i++) {
-    PiezasB[i].updateb(mouseX, mouseY);// ejecuta la translación para cada
-  }
-  for (int i =0; i<k; i++) {
-    PiezasN[i].updaten(mouseX, mouseY);
+  if (jc == true) {
+    background(0);
+    image(img, width/2-height/2, 0, height, height);
+    for (int i =0; i<j; i++) {
+      PiezasB[i].draw();
+    }
+    for (int i =0; i<k; i++) {
+      PiezasN[i].draw();
+    }
+
+    for (int i =0; i<j; i++) {
+      PiezasB[i].updateb(mouseX, mouseY);// ejecuta la translación para cada
+    }
+    for (int i =0; i<k; i++) {
+      PiezasN[i].updaten(mouseX, mouseY);
+    }
   }
 }
 
@@ -84,10 +112,14 @@ void mousePressed() {
     for (int i = 0; i<j; i++) { //recorre el arreglo para que en clickb se mire si esta encima y ha presionado
       PiezasB[i].clickb(mouseX, mouseY);
     }
-  } else if(Turno == false) {
+  } else if (Turno == false) {
     for (int i =0; i<k; i++) {
       PiezasN[i].clickn(mouseX, mouseY);
     }
+  }
+  if ( mouseButton == LEFT ) {
+    if (b[0].col()==color(255, 102, 102))
+      jc=true;
   }
 }
 
@@ -96,4 +128,13 @@ void keyPressed() {
   n++;
   Turno=true;
   problemas(n);
+}
+void mouseMoved() {
+  for (int i =0; i<3; i++) {
+    if (dist(mouseX, mouseY, b[i].trans.x+b[i].gn.x/2, b[i].trans.y+b[i].gn.y/2)<width/25) {
+      b[i].setCol(color(255, 102, 102));
+    } else {
+      b[i].setCol(color(0, 128, 255));
+    }
+  }
 }
