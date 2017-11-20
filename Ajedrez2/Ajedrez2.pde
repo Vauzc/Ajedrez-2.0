@@ -125,9 +125,11 @@ void mousePressed() {
 
 
 void keyPressed() {
-  n++;
-  Turno=true;
-  problemas(n);
+  if (jc == true) {
+    n++;
+    Turno=true;
+    problemas(n);
+  }
 }
 void mouseMoved() {
   for (int i =0; i<3; i++) {
