@@ -12,6 +12,8 @@ PImage tn;
 PImage pb;
 PImage pn;
 PImage p1;
+PImage m2;
+PImage m3;
 boolean Turno=true;
 int fila =8;
 int columna=8;
@@ -46,7 +48,7 @@ void setup() {
   My=new int[columna][fila];
   for (int i =0; i<8; i++) {
     for (int j =0; j<8; j++) {
-      Mx[i][j]=width/2-height/2+(height/8)*j;
+      Mx[i][j]=width-height+(height/8)*j;
       My[i][j]=(height/8)*t;
     }
     t--;
@@ -72,6 +74,8 @@ void setup() {
   pb = loadImage("pb.png");
   pn = loadImage("pn.png");
   p1 = loadImage("p1.png");
+  m2 = loadImage("m2.png");
+  m3 = loadImage("m3.png");
   problemas(n);
 }
 
@@ -89,7 +93,7 @@ void draw() {
   if (jc == true) {
     background(0);
     verificar(n);
-    image(img, width/2-height/2, 0, height, height);
+    image(img, width-height, 0, height, height);
     for (int i =0; i<j; i++) {
       PiezasB[i].draw();
     }
