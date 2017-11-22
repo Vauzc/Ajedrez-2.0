@@ -30,10 +30,16 @@ boolean jc=false;
 Btom[] b = new Btom [3];
 int tc;
 int ttc;
-
+int a;
 
 
 void setup() {
+  
+  if(width-height>300){
+     a=400;
+  }else{
+     a=width-height;
+  }
   b[0] = new Btom (width-(width/3), height-(height/3)*2.5, width/4, height/10, color(0, 128, 255), "Jugar");
   b[1] = new Btom (width-(width/3), height-(height/3)*2, width/4, height/10, color(0, 128, 255), "Modo Libre");
   b[2] = new Btom (width-(width/3), height-(height/4), width/4, height/10, color(0, 128, 255), "Instrucciones");
@@ -48,7 +54,7 @@ void setup() {
   My=new int[columna][fila];
   for (int i =0; i<8; i++) {
     for (int j =0; j<8; j++) {
-      Mx[i][j]=width-height+(height/8)*j;
+      Mx[i][j]=a+(height/8)*j;
       My[i][j]=(height/8)*t;
     }
     t--;
@@ -93,7 +99,7 @@ void draw() {
   if (jc == true) {
     background(0);
     verificar(n);
-    image(img, width-height, 0, height, height);
+    image(img, a, 0, height, height);
     for (int i =0; i<j; i++) {
       PiezasB[i].draw();
     }
