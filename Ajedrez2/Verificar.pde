@@ -22,7 +22,7 @@ int verificar(int n, int contador) {
         n++;
         keyPressed();
         return n;
-      }else if(Turno==false&&PiezasB[6].selectb==false&&PiezasB[6].trans.x!=Mx[1][5]){
+      }else if(Turno==false&&PiezasB[6].selectb==false&&PiezasB[1].trans.x!=Mx[4][6]){
         image(mal, a, height/4, 3*height/4, 3*height/4);
         problemas(n);
         Turno=true;
