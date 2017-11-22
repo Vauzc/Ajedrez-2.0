@@ -11,8 +11,7 @@ int verificar(int n, int contador) {
         PiezasN[1].trans.y=My[3][3];
         Turno=!Turno;
         contador++;
-      }else if(mousePressed){
-        //contador=-1;
+      }else if(Turno==false&&PiezasB[6].selectb==false&&PiezasB[6].trans.x!=Mx[1][5]){
         image(mal, a, height/4, 3*height/4, 3*height/4);
         problemas(n);
         Turno=true;
@@ -20,13 +19,10 @@ int verificar(int n, int contador) {
     case 1:
       if (PiezasB[1].trans.x==Mx[4][6]&& PiezasB[1].trans.y==My[4][6]&&mousePressed) { 
         image(jm, height, height/4, 3*height/8, height/8);
-        delay(400);
-        contador=2;
         n++;
         keyPressed();
         return n;
-      }else if(mousePressed){
-        //contador=-1;
+      }else if(Turno==false&&PiezasB[6].selectb==false&&PiezasB[6].trans.x!=Mx[1][5]){
         image(mal, a, height/4, 3*height/4, 3*height/4);
         problemas(n);
         Turno=true;

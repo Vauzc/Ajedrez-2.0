@@ -46,7 +46,7 @@ boolean jc=false;
 Btom[] b = new Btom [3];
 int tc;
 int ttc;
-int a;
+int a,c;
 int contador=0;
 
 
