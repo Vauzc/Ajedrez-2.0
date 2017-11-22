@@ -12,13 +12,28 @@ PImage tn;
 PImage pb;
 PImage pn;
 PImage p1;
+PImage p2;
+PImage p3;
+PImage p4;
+PImage p5;
+PImage p6;
+PImage p7;
+PImage p8;
+PImage p9;
+PImage p10;
+PImage p11;
+PImage p12;
+PImage p13;
+PImage p14;
+PImage p15;
 PImage m2;
 PImage m3;
+PImage jm;
 boolean Turno=true;
 int fila =8;
 int columna=8;
 int t=7;
-int n=0;
+int n=1;
 int j, k;
 int[][] Mx;
 int[][] My;
@@ -31,14 +46,15 @@ Btom[] b = new Btom [3];
 int tc;
 int ttc;
 int a;
+int contador=0;
 
 
 void setup() {
-  
-  if(width-height>300){
-     a=400;
-  }else{
-     a=width-height;
+
+  if (width-height>300) {
+    a=400;
+  } else {
+    a=width-height;
   }
   b[0] = new Btom (width-(width/3), height-(height/3)*2.5, width/4, height/10, color(0, 128, 255), "Jugar");
   b[1] = new Btom (width-(width/3), height-(height/3)*2, width/4, height/10, color(0, 128, 255), "Modo Libre");
@@ -80,8 +96,23 @@ void setup() {
   pb = loadImage("pb.png");
   pn = loadImage("pn.png");
   p1 = loadImage("p1.png");
+  p2 = loadImage("p2.png");
+  p3 = loadImage("p3.png");
+  p4 = loadImage("p4.png");
+  p5 = loadImage("p5.png");
+  p6 = loadImage("p6.png");
+  p7 = loadImage("p7.png");
+  p8 = loadImage("p8.png");
+  p9 = loadImage("p9.png");
+  p10 = loadImage("p10.png");
+  p11 = loadImage("p11.png");
+  p12 = loadImage("p12.png");
+  p13 = loadImage("p13.png");
+  p14 = loadImage("p14.png");
+  p15 = loadImage("p15.png");
   m2 = loadImage("m2.png");
   m3 = loadImage("m3.png");
+  jm = loadImage("jm.png");
   problemas(n);
 }
 
@@ -98,8 +129,8 @@ void draw() {
   image(gf[ttc], width/15, height/8, width-width/2, height-height/5);
   if (jc == true) {
     background(0);
-    verificar(n);
     image(img, a, 0, height, height);
+    verificar(n, contador);
     for (int i =0; i<j; i++) {
       PiezasB[i].draw();
     }
