@@ -47,7 +47,7 @@ abstract class Piezas {
     y=7;
     if (selectb) {
       for (int i=0; i<7; i++) {
-        if ((mouseX>width/2-height/2+(height/8)*i)&&(mouseX<width/2-height/2+(height/8)*(i+1))) {
+        if ((mouseX>a+(height/8)*i)&&(mouseX<a+(height/8)*(i+1))) {
           x=i;
         }
       }
@@ -86,7 +86,7 @@ abstract class Piezas {
     y=7;
     if (selectn) {
       for (int i=0; i<7; i++) {
-        if ((mouseX>width/2-height/2+(height/8)*i)&&(mouseX<width/2-height/2+(height/8)*(i+1))) {
+        if ((mouseX>a+(height/8)*i)&&(mouseX<a+(height/8)*(i+1))) {
           x=i;
         }
       }
