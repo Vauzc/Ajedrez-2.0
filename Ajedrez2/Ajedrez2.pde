@@ -86,9 +86,9 @@ void draw() {
     ttc=tc;
   }
   image(gf[ttc], width/15, height/8, width-width/2, height-height/5);
-
   if (jc == true) {
     background(0);
+    verificar(n);
     image(img, width/2-height/2, 0, height, height);
     for (int i =0; i<j; i++) {
       PiezasB[i].draw();
