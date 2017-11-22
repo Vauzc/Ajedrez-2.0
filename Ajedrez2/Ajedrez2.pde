@@ -29,6 +29,7 @@ PImage p15;
 PImage m2;
 PImage m3;
 PImage jm;
+PImage mal;
 boolean Turno=true;
 int fila =8;
 int columna=8;
@@ -113,6 +114,7 @@ void setup() {
   m2 = loadImage("m2.png");
   m3 = loadImage("m3.png");
   jm = loadImage("jm.png");
+  mal = loadImage("mal.png");
   problemas(n);
 }
 
