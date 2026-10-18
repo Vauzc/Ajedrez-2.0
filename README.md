@@ -6,7 +6,7 @@ Versión actual del proyecto
 
 | Nombre                     | Github nickname |
 |----------------------------|-----------------|
-| Andrés Felipe Umaña Bernal |   -             |
+| Andrés U                   |   -             |
 | Camilo Andrés Usuga Mora   |   Catwilo       |
 | Valentina Ñústez Castaño   |   Vauzc         |
 
